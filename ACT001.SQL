@@ -1,3 +1,22 @@
+CREATE TABLE STUDENTS (
+    LNAME VARCHAR(100), 
+    FNAME VARCHAR(100)
+    );
+
+CREATE TABLE publishers(
+    unique_ID INT UNSIGNED NOT NULL,
+    publisher_NAME VARCHAR(100) NOT NULL,
+    origin VARCHAR(255)
+    );
+
+CREATE TABLE books(
+    unique_ID INT UNSIGNED,
+    books_TTL VARCHAR(100) NOT NULL,
+    ISBN INT UNSIGNED NOT NULL,
+    publication_date DATE NOT NULL,
+    price DECIMAL NOT NULL,
+    F_Key INT UNSIGNED
+    );
 
 CREATE TABLE books(
     unique_ID INT UNSIGNED,
@@ -55,7 +74,7 @@ CREATE TABLE COURSETB(
 );
 
 
------------------------------------------------------
+
 
 
 
